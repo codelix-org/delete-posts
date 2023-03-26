@@ -16,6 +16,7 @@
         <td><%= post.title %></td>
         <td><%= post.content %></td>
         <td><%= link_to 'Show', post %></td>
+        <td><%= button_to 'Delete', delete_post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-post-button' %></td>
       </tr>
     <% end %>
     </tbody>
