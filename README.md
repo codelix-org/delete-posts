@@ -1,15 +1,14 @@
-# Rails Trail - Exercise #1
+# Rails Trail - Exercise #2
 
 ## Getting started
 
 ```
 # Navigate to the trail folder
-mkdir rails-trail
 cd rails-trail
 
 # Clone this repo
-git clone git@github.com:codelix-org/set-home-page.git
-cd set-home-page
+git clone git@github.com:codelix-org/delete-posts.git
+cd delete-posts
 
 # Install dependencies
 bundle 
@@ -30,18 +29,21 @@ bundle exec rails s
 
 ## Exercise instructions
 
-In this exercise you'll be changing the page that loads when you visit the homepage. 
+In this exercise you'll be adding a button that allows you to delete a post. 
 
-Currently when you go to http://localhost:3000/ you'll see this page:
+When you go to http://localhost:3000/ you should see the ability to delete posts like this:
 
-![img.png](current_homepage.png)
+![img_1.png](expected_homepage_with_delete_button.png)
 
-Your challenge is to change the home page so that we can see all the posts that have been added, which 
-feels more appropriate for our users to see when they load our site: 
+Clicking on the delete button should remove the post from the page. So if I clicked the delete button
+for the first post I would then see: 
 
-![img.png](expected_homepage.png)
+![img.png](expected_homepage_after_deleting_item.png)
 
-You **SHOULD NOT** change any `html.erb` files. 
+The testing of this exercise does not check any css. You can style it however you like or you can use the 
+css that has been provided (to apply the css for the delete button, give the button the css class of `.delete-post-button`)
+
+You can run the tests locally (`bundle exec rspec`) and ensure they pass before pushing for marking. 
 
 When you've completed the task, push your branch to github and create a PR for the branch.
 
